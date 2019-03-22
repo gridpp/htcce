@@ -8,15 +8,15 @@ It just uses a Perl script to make the users. Apart from that, you do everything
 
 I assume you are going to make one headnode and one workernode.
 
-I assume you've chosen some admin system, unpacked this tar file here and seen this README file.
+I assume you've chosen some admin system, unpacked this tar file here and seen this README.md file.
 
 You are going to copy files from here onto the headnode, then configure it.
 Then you are going to do something similar to make the workernode.  Then you
 are going to do a test and run some jobs.
 
-The ./svr/ directory shows how to make the headnode (and the test at the end).
+The ./svr/ directory has a README.md telling how to make the headnode (and the test at the end).
 
-And the ./wn/ directory tells how to make the workernode.
+And the ./wn/ directory has a README.md telling how to make the workernode.
 
 I won't say much about firewalls and networks (since there is so very much to say about all that!)
 
