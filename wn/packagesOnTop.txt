@@ -2,7 +2,6 @@ wn
 condor
 cvmfs
 lfc-python
-lcg-CA
 ca-policy-egi-core
 ca-policy-lcg
 voms-clients-cpp
