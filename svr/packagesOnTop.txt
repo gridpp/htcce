@@ -1,0 +1,11 @@
+yum-plugin-priorities
+yum-plugin-protectbase
+htcondor-ce-condor
+htcondor-ce-bdii
+argus-gsi-pep-callout
+lcas-plugins-basic
+lcas-plugins-voms
+lcmaps-plugins-basic
+lcmaps-plugins-c-pep
+lcmaps-plugins-verify-proxy
+lcmaps-plugins-voms
