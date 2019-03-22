@@ -16,20 +16,22 @@ Here are the steps to make the worker node.
 - Have a plain vanilla worker node.
 - Copy the repos.tar file to /etc/yum.repos.d/ and untar it there. Do yum clean all.
 - Copy the packagesOnTop.txt to /root and use a loop to install the packages.
--   for p in `cat packagesOnTop.txt`; do yum -y install $p; done
-- Copy configOnTop.tar to / and untar it there 
+    for p in `cat packagesOnTop.txt`; do yum -y install $p; done
+- Copy configOnTop.tar to / and untar it there.
 - Use tar -tf configOnTop.tar to list the files and modify the config to suit your site.
+    Note: the main files to edit would be 00-node_parameters (properties of node) 
+    and condor_config.local (point it at the right server.)
 - Copy users.conf and makeNewUsers.pl to /root/scripts/
 - Modify users.conf to suit your site and run ./makeNewUsers.pl users.conf
-- Alternatively, use any method you like to make the users.
+    Alternatively, use any method you like to make the users.
 - Copy a pool_password made on the server to this system, in (e.g.) /etc/condor
--    (or work backwards and make the pool password on the wn, condor_store_cred -f /etc/condor/pool_password)
+     (or work backwards and make the pool password on the wn, condor_store_cred -f /etc/condor/pool_password)
 - cvmfs_config setup
 - cvmfs_config chksetup
-- cvmfs_config probe
+- cvmfs_config probe; echo $? # should be zero
 - systemctl restart autofs.service
-- ls /cvmfs/atlas.cern.ch
-- Reboot the worker node (why not?)
+- ls /cvmfs/atlas.cern.ch  # should see dir or files
+- Reboot the worker node   # why not?
 - Start condor services
 
 Test as per svr section.
