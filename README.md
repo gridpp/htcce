@@ -8,7 +8,7 @@ It just uses a Perl script to make the users. Apart from that, you do everything
 
 I assume you are going to make one headnode and one workernode.
 
-I assume you've chosen some admin system unpacked this tar file here and seen this README file.
+I assume you've chosen some admin system, unpacked this tar file here and seen this README file.
 
 You are going to copy files from here onto the headnode, then configure it.
 Then you are going to do something similar to make the workernode.  Then you
