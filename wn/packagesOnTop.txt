@@ -1,0 +1,12 @@
+wn
+condor
+cvmfs
+lfc-python
+lcg-CA
+ca-policy-egi-core
+ca-policy-lcg
+voms-clients-cpp
+mjf-htcondor
+HEP_OSlibs
+yum-plugin-priorities
+yum-plugin-protectbase
