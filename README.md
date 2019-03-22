@@ -18,6 +18,8 @@ The ./svr/ directory has a README.md telling how to make the headnode (and the t
 
 And the ./wn/ directory has a README.md telling how to make the workernode.
 
+BTW: The ./cm/ directory tells how to make a HTCondor batch farm headnode, without any CE of any kind.
+
 I won't say much about firewalls and networks (since there is so very much to say about all that!)
 
 But you will need to be able to use ports 9618 and 9619 for condor etc.

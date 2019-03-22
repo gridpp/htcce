@@ -1,0 +1,3 @@
+yum-plugin-priorities
+yum-plugin-protectbase
+condor
