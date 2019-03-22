@@ -14,7 +14,7 @@ configOnTop.tar    # Config that needs to go in the PVWN
 Here are the steps to make the worker node.
 
 - Have a plain vanilla worker node.
-- Copy the repos.tar file to /etc/yum.repos.d/ and untar it there.
+- Copy the repos.tar file to /etc/yum.repos.d/ and untar it there. Do yum clean all.
 - Copy the packagesOnTop.txt to /root and use a loop to install the packages.
 -   for p in `cat packagesOnTop.txt`; do yum -y install $p; done
 - Copy configOnTop.tar to / and untar it there 
