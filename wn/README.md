@@ -1,5 +1,5 @@
 This is a way to install a CentOS7 HTCondor worker node for 
-use in a HTCondor-CE setting (instead of ARC or CREAM.)
+use with a HTCondor central manager.
 
 First make a "plain vanilla worker node" (PVWN) to site spec.  
 
@@ -32,7 +32,7 @@ Here are the steps to make the worker node.
 - systemctl restart autofs.service
 - ls /cvmfs/atlas.cern.ch  # should see dir or files
 - Reboot the worker node   # why not?
-- Start condor services
+- service condor start 
 
 Ste
 25 March 2019

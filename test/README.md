@@ -1,11 +1,11 @@
 This is a way to test a CentOS7 HTCondor-CE/HTCondor cluster.
 
-Here are the steps to test the head node.
+Here are the steps.
 
 - Set up a worker node to point at the new headnode. 
   (see ../wn dir.) You might need to restart the condor services on both systems.
 - On the headnode, turn on the worker node using scripts/startJobsOn.sh r23-n10
-- Copy the test.tar file to (e.g.) /home/dteam001/
+- Copy the test.tar and misc.sh files to (e.g.) /home/dteam001/
 - su - dteam001
 - Untar the test.tar file and cd test/
 - Make a proxy somehow and put it into the /home/dteam001/test/ dir, with proper ownership, e.g.

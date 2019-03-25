@@ -27,7 +27,7 @@ Here are the steps to make the head node.
 - Copy the pool_password to all systems, in (e.g.) /etc/condor
 
 - Reboot the head node
-- Start services; condor
+- service condor start
 
 Ste
 25 March 2019

@@ -2,7 +2,6 @@ This is a way to install a CentOS7 HTCondor-CE headnode.
 
 I assume you have already set up the system as a central manager (CM.)
 
-
 For the HTCondor-CE, these are the files you'll need:
 
 cePackagesOnTop.txt  # Packages that need to go on top on of the CM
@@ -23,16 +22,16 @@ Here are the steps to make the head node.
 - Install the host certificates and keys, as per following. Note that 
   the condor versions are just copies.
 
-  -r--r--r-- 1 root root 1606 Mar 12 15:41 ./etc/grid-security/hostcert.pem
-  -r-------- 1 root root 1675 Mar 12 15:41 ./etc/grid-security/hostkey.pem
-  -r--r--r-- 1 condor condor 1606 Mar 12 15:41 ./etc/grid-security/condorcert.pem
-  -r-------- 1 condor condor 1679 Mar 12 15:41 ./etc/grid-security/condorkey.pem
+  -r--r--r-- 1 root root 1606 Mar 12 15:41 /etc/grid-security/hostcert.pem
+  -r-------- 1 root root 1675 Mar 12 15:41 /etc/grid-security/hostkey.pem
+  -r--r--r-- 1 condor condor 1606 Mar 12 15:41 /etc/grid-security/condorcert.pem
+  -r-------- 1 condor condor 1679 Mar 12 15:41 /etc/grid-security/condorkey.pem
 
 - Reboot the head node
-- Start services; condor, condor-ce, bdii
-- Use the test//README.md to test the who setup.
+- service  condor start; service condor-ce start; service bdii start
+- Use the test/README.md to test the whole setup.
 
-The steps to hook the ce up to APEL accounting are listed here:
+NOTE: The steps to hook the new ce up to APEL accounting are listed here:
 
 -  https://twiki.cern.ch/twiki/bin/viewauth/LCG/HtCondorCeAccounting
 
