@@ -8,17 +8,17 @@ For the workernode, these are the files you'll need:
 users.conf         # A list of users that you will make on your head node (must match worker node.)
 makeNewUsers.pl    # A script that reads users.conf and makes the users.
 repos.tar          # The repos that you need to use for the packages.
-packagesOnTop.txt  # Packages that need to go on top on of the PVWN
-configOnTop.tar    # Config that needs to go in the PVWN
+wnPackagesOnTop.txt  # Packages that need to go on top on of the PVWN
+wnConfigOnTop.tar    # Config that needs to go in the PVWN
 
 Here are the steps to make the worker node.
 
 - Have a plain vanilla worker node.
 - Copy the repos.tar file to /etc/yum.repos.d/ and untar it there. Do yum clean all.
-- Copy the packagesOnTop.txt to /root and use a loop to install the packages.
-    for p in `cat packagesOnTop.txt`; do yum -y install $p; done
-- Copy configOnTop.tar to / and untar it there.
-- Use tar -tf configOnTop.tar to list the files and modify the config to suit your site.
+- Copy the wnPackagesOnTop.txt to /root and use a loop to install the packages.
+    for p in `cat wnPackagesOnTop.txt`; do yum -y install $p; done
+- Copy wnConfigOnTop.tar to / and untar it there.
+- Use tar -tf wnConfigOnTop.tar to list the files and modify the config to suit your site.
     Note: the main files to edit would be 00-node_parameters (properties of node) 
     and condor_config.local (point it at the right server.)
 - Copy users.conf and makeNewUsers.pl to /root/scripts/
@@ -34,8 +34,6 @@ Here are the steps to make the worker node.
 - Reboot the worker node   # why not?
 - Start condor services
 
-Test as per svr section.
-
 Ste
-21 March 2019
+25 March 2019
 
