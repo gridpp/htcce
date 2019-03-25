@@ -28,9 +28,16 @@ The ./ce/ directory has a README.md telling how to make the ce.
 
 And the ./test/ directory has a README.md telling how to test this work.
 
-I won't say much about firewalls and networks (since there is so very much to say about all that!)
+Notes: 
 
-But you will need to be able to use ports 9618 and 9619 for condor etc.
+1) I won't say much about firewalls and networks (since there 
+is so very much to say about all that!) But you will need to be able 
+to use ports 9618 and 9619 for condor etc.
+
+2) The BDII is configured with the HTCondor central manager; by rights it
+should be configured with the HTCondor-CE, but sadly the condor python bindings
+default to the /etc/condor, not etc/condor-ce. Hence this compromise. But
+it works OK.
 
 Ste
 25 March 2019
