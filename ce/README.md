@@ -5,7 +5,6 @@ I assume you have already set up the system as a central manager (CM.)
 
 For the HTCondor-CE, these are the files you'll need:
 
-repos.tar          # The repos that you need to use for the packages. 
 cePackagesOnTop.txt  # Packages that need to go on top on of the CM
 ceConfigOnTop.tar    # Config that needs to go in the CE.
 
