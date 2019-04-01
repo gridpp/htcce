@@ -32,7 +32,9 @@ Notes:
 
 1) I won't say much about firewalls and networks (since there 
 is so very much to say about all that!) But you will need to be able 
-to use ports 9618 and 9619 for condor etc.
+to use ports 9618 and 9619 for condor etc. And, in the manual build, the
+hostname for the CE is hepgrid9 (for external LAN) or igrid9 (for internal LAN), 
+which is for special routing at Liverpool that you don't need to use.
 
 2) The BDII is configured with the HTCondor central manager; by rights it
 should be configured with the HTCondor-CE, but sadly the condor python bindings
